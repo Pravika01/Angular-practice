@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/nav-home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/feature">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+         </ul>
+    </div>
+    <form class="d-flex " role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="ng-container">
+  <mat-drawer-container class="example-container ">
+    <mat-drawer mode="side" opened class="size"> 
+      <div class="heading m-1 p-1">
+      <p>Autocomplete</p>
+      <p>Badge</p>
+      <p>Bottom sheet</p>
+      <p>Button</p>
+      <p>Button toggle</p>
+      <p>Card</p>
+      <p>Checkbox</p>
+      <p>Chips</p>
+      <p>Core</p>
+      <p>Datepicker</p>
+    </div>
+    </mat-drawer>
+    <mat-drawer-content>
+      
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  
+</div>
+
+
+  
+
+
